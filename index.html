@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cartas Anime</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="perfil">
+<img src="img/FotoDePerfil.jpg" alt="Foto de Perfil" class="foto-perfil" id="foto-perfil">
+                <input type="file" id="input-cambiar-perfil" accept="image/*" style="display:none;">
+            </div>
+            <ul class="botones-menu">
+                <li><button class="boton-interactivo">Home</button></li>
+                <li><button class="boton-interactivo">DC</button></li>
+                <li><button class="boton-interactivo" id="marvel-btn">Marvel</button></li>
+                <li><button class="boton-interactivo">Arena</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="bienvenida">
+            <h1>¡Irasshaimase, valiente viajero!</h1>
+            <p>En este vasto universo de cartas anime, donde cada ilustración encierra un poder inimaginable y cada personaje forja su propio destino, te damos la más cordial bienvenida. Prepárate para embarcarte en una aventura sin igual, desvelando los secretos ocultos en cada carta y dominando habilidades legendarias. ¡El destino de incontables mundos está en tus manos! ¿Serás capaz de alzarte como el héroe definitivo?</p>
+        </div>
+    </main>
+
+    <div class="marvel-container" style="display: none;">
+        <h2>Cartas de Marvel</h2>
+        <div class="marvel-categories">
+            <button class="category-btn active" data-category="all">Todos</button>
+            <button class="category-btn" data-category="avengers">Avengers</button>
+            <button class="category-btn" data-category="xmen">X-Men</button>
+            <button class="category-btn" data-category="guardians">Guardianes de la Galaxia</button>
+        </div>
+        <div class="lista-cartas-marvel">
+            <div class="carta-marvel" data-id="spiderman">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/SpaidermanCart.jpg" alt="Spiderman">
+                        <div class="info-principal">
+                            <h3>Spiderman</h3>
+                            <p class="clave">SM-001</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Descripción y habilidades de Spiderman aquí.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="ironman">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Iron man.jpg" alt="Iron Man">
+                        <div class="info-principal">
+                            <h3>Iron Man</h3>
+                            <p class="clave">IM-002</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Descripción y habilidades de Iron Man aquí.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="wolverine">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/wolverin.png" alt="Wolverine">
+                        <div class="info-principal">
+                            <h3>Wolverine</h3>
+                            <p class="clave">WL-003</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Descripción y habilidades de Wolverine aquí.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="starlord">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Peterlord.jpg" alt="Star-Lord">
+                        <div class="info-principal">
+                            <h3>Star-Lord</h3>
+                            <p class="clave">SL-004</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Descripción y habilidades de Star-Lord aquí.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="thor">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Thor.jpg" alt="Thor">
+                        <div class="info-principal">
+                            <h3>Thor</h3>
+                            <p class="clave">TH-005</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>El dios del trueno, con fuerza y control del rayo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="hulk">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Hulk.png" alt="Hulk">
+                        <div class="info-principal">
+                            <h3>Hulk</h3>
+                            <p class="clave">HK-006</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Fuerza descomunal y resistencia casi invencible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta-marvel" data-id="avispa">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Avispa.png" alt="Avispa">
+                        <div class="info-principal">
+                            <h3>Avispa</h3>
+                            <p class="clave">AV-007</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Pequeña pero poderosa, con la habilidad de reducir su tamaño.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="capitana-marvel">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Capitana_marvel.png" alt="Capitana Marvel">
+                        <div class="info-principal">
+                            <h3>Capitana Marvel</h3>
+                            <p class="clave">CM-016</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Superfuerza, vuelo y energía cósmica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="pantera-negra">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/PanteraNegra.png" alt="Pantera Negra">
+                        <div class="info-principal">
+                            <h3>Pantera Negra</h3>
+                            <p class="clave">PN-017</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Agilidad, fuerza y tecnología avanzada de Wakanda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="black-widow">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Black Widow.jpg" alt="Black Widow">
+                        <div class="info-principal">
+                            <h3>Black Widow</h3>
+                            <p class="clave">BW-018</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Experta en combate cuerpo a cuerpo y espionaje.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="bruja-escarlata">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/BrujaEscarlata.png" alt="Bruja Escarlata">
+                        <div class="info-principal">
+                            <h3>Bruja Escarlata</h3>
+                            <p class="clave">BE-019</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Manipulación de la realidad y magia poderosa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="hombre-hormiga">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/HombreHormiga.png" alt="Hombre Hormiga">
+                        <div class="info-principal">
+                            <h3>Hombre Hormiga</h3>
+                            <p class="clave">HH-008</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Experto en tecnología y capaz de cambiar de tamaño.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="capitan-america">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/CapitanAmerica.png" alt="Capitán América">
+                        <div class="info-principal">
+                            <h3>Capitán América</h3>
+                            <p class="clave">CA-009</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Soldado superhumano con un escudo indestructible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="ciclope">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Ciclope.png" alt="Cíclope">
+                        <div class="info-principal">
+                            <h3>Cíclope</h3>
+                            <p class="clave">CI-010</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Líder de los X-Men con poderosos rayos ópticos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="jean-grey">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/JeanGrey.png" alt="Jean Grey">
+                        <div class="info-principal">
+                            <h3>Jean Grey</h3>
+                            <p class="clave">JG-011</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Mutante con habilidades telepáticas y telequinéticas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="tormenta">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Tormenta.jpeg" alt="Tormenta">
+                        <div class="info-principal">
+                            <h3>Tormenta</h3>
+                            <p class="clave">TO-012</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Controla el clima y los elementos atmosféricos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="bestia">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Bestia.png" alt="Bestia">
+                        <div class="info-principal">
+                            <h3>Bestia</h3>
+                            <p class="clave">BE-013</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Mutante con fuerza, agilidad y gran intelecto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="profesor-x">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/ProfesorX.jpg" alt="Profesor X">
+                        <div class="info-principal">
+                            <h3>Profesor X</h3>
+                            <p class="clave">PX-014</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Telepata poderoso y fundador de los X-Men.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carta-marvel" data-id="gambito">
+                <div class="carta-inner">
+                    <div class="cara principal">
+                        <img src="img/Gambito.png" alt="Gambito">
+                        <div class="info-principal">
+                            <h3>Gambito</h3>
+                            <p class="clave">GA-015</p>
+                        </div>
+                    </div>
+                    <div class="cara reverso">
+                        <p>Mutante con habilidad para cargar objetos con energía cinética.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carta-seleccionada-vista" style="display: none;">
+            <div class="carta-ampliada">
+                </div>
+            <div class="carta-reverso-vista">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
